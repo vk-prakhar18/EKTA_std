@@ -1,0 +1,413 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #FF6F00 ;
+    list-style: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 10px 30px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #004AAD;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FF6F00;
+    transform: scale(1.1);
+}
+/* Color For Ekta STD - 
+   Midnight BLUE
+   Peru
+   Khaki
+*/
+
+.hero {
+    height: 85vh;
+    background: url('BG1.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: right;
+    color: peru;
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    padding-top: 15vh;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.exams-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.exams-title {
+    font-size: 3rem;
+    color: #004AAD;
+    margin-bottom: 10px;
+}
+
+.exams-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.exam-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.exam-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.exam-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+.exam-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.exam-card-content {
+    padding: 25px;
+}
+
+.exam-card-title {
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.exam-card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.exam-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #004AAD;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.exam-card a:hover {
+    background-color: #FF6F00;
+}
+.section-wrapper {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: #FF6F00;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #FF6F00;
+    margin-bottom: 60px;
+}
+
+.section-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.section-item {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    border-radius: 20px;
+    width: 350px;
+    padding: 40px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+}
+
+.section-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 12px 12px 24px #c9c9c9, -12px -12px 24px #ffffff;
+}
+
+.section-item h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.section-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #004AAD;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.section-item a:hover {
+    background-color: #FF6F00;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-title {
+    font-size: 3rem;
+    color: #004AAD;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about-highlight {
+    font-weight: 600;
+    color: #FF6F00;
+}
+
+.about-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #004AAD;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.about-button:hover {
+    background-color: #FF6F00;
+}
+.scholarship-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #004AAD, #002F6C);
+    color: white;
+    text-align: center;
+}
+
+.scholarship-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.scholarship-description {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.scholarship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scholarship-card {
+    background: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.scholarship-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.scholarship-card-content {
+    padding: 30px;
+}
+
+.scholarship-card-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #004AAD;
+}
+
+.scholarship-card-text {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.scholarship-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #FF6F00;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.scholarship-card a:hover {
+    background-color: #004AAD;
+}
+.newsletter-section {
+    background: linear-gradient(135deg, #FF6F00, #FFB300);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.newsletter-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.newsletter-form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    width: 70%;
+    padding: 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-form button {
+    padding: 20px 45px;
+    font-size: 1rem;
+    color: white;
+    background-color: #004AAD;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #002F6C;
+}
+footer {
+    background-attachment:scroll;
+    background-color: #002F6C;
+    color: #FF6F00;
+    text-align: center;
+    padding-top: 50px 20px;
+    padding-bottom: none;
+}
+
+.footer-links a {
+    color: #FFB300;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 1rem;
+}
